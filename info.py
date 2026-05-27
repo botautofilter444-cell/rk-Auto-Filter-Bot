@@ -37,12 +37,10 @@ PORT = int(environ.get('PORT', '80')) #don't change anything
 PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '777000') #apni tg id daalo
+ADMINS = environ.get('ADMINS', '5000162773') #apni tg id daalo
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
-else:
-    ADMINS = [int(admins) for admins in ADMINS.split()]
 
 # Channels
 INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1003823902223').split()]
@@ -95,7 +93,7 @@ VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
 STICKERS_IDS = (
-    "CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME CAACAgQAAxkBAAELqxll8CcG-MZx9mIOXgaHSzLc9uyxswACaxQAAlrdEVOJDG3cIZuWLzQE"
+    " CAACAgUAAxkBAAEP1vZqFoslsmaeXL1cNT_vUxEFR9FwugAC0CIAArWwuVTpXbExF0aDJR4E"
 ).split()
 
 # boolean settings 
