@@ -34,7 +34,7 @@ if len(BOT_TOKEN) == 0:
 PORT = int(environ.get('PORT', '80')) #don't change anything 
 
 # Bot pics
-PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/1b198fddf7def76942176-da9921339b6d1d17b4.jpg https://graph.org/file/836e2fe5201cfe0dbbac0-8f2e9d280832c2096c.jpg https://graph.org/file/a9b882da92c72e7344306-b489f927f3b6bf80cc.jpg https://graph.org/file/33d354c0726a482c81a5f-64cb33ab2f548204bd.jpg')).split()
 
 # Bot Admins
 ADMINS = environ.get('ADMINS', '5000162773') #apni tg id daalo
@@ -93,8 +93,7 @@ VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
 STICKERS_IDS = (
-    " CAACAgUAAxkBAAEP1vZqFoslsmaeXL1cNT_vUxEFR9FwugAC0CIAArWwuVTpXbExF0aDJR4E"
-).split()
+    "CAACAgUAAxkBAAEP1vZqFoslsmaeXL1cNT_vUxEFR9FwugAC0CIAArWwuVTpXbExF0aDJR4E").split()
 
 # boolean settings 
 GROUP_FSUB = is_enabled('GROUP_FSUB', False) 
@@ -104,7 +103,7 @@ AUTO_DELETE = is_enabled('AUTO_DELETE', False)
 WELCOME = is_enabled('WELCOME', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
-LINK_MODE = is_enabled("LINK_MODE", True)
+LINK_MODE = is_enabled("LINK_MODE", False)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
